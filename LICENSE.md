@@ -1,6 +1,6 @@
-The MIT License (MIT)
+The MIT License
 
-Copyright (c) Spatie bvba <info@spatie.be>
+Copyright (c) Jacob Baker-Kretzmar
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

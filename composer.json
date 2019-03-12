@@ -1,18 +1,24 @@
 {
-    "name": "spatie/laravel-translatable",
-    "description": "A trait to make an Eloquent model hold translations",
+    "name": "bakerkretzmar/laravel-translatable",
+    "description": "A trait to make Eloquent models easily translatable.",
     "keywords": [
         "spatie",
         "laravel-translatable",
         "translate",
         "eloquent",
         "model",
-        "i8n",
+        "i18n",
         "multilingual"
     ],
-    "homepage": "https://github.com/spatie/laravel-translatable",
+    "homepage": "https://github.com/bakerkretzmar/laravel-translatable",
     "license": "MIT",
     "authors": [
+        {
+            "name": "Jacob Baker-Kretzmar",
+            "email": "jacobtbk@gmail.com",
+            "homepage": "https://bakerkretzmar.ca",
+            "role": "Developer"
+        },
         {
             "name": "Freek Van der Herten",
             "email": "freek@spatie.be",
@@ -42,12 +48,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Translatable\\": "src"
+            "Bakerkretzmar\\Translatable\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Translatable\\Test\\": "tests"
+            "Bakerkretzmar\\Translatable\\Test\\": "tests"
         }
     },
     "scripts": {
