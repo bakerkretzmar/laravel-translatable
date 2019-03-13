@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\Translatable\Events;
+namespace Bakerkretzmar\Translatable\Events;
 
 use Illuminate\Database\Eloquent\Model;
 
-class TranslationHasBeenSet
+class TranslationUpdated
 {
-    /** @var \Spatie\Translatable\Translatable */
+    /** @var \Bakerkretzmar\Translatable\Translatable */
     public $model;
 
     /** @var string */

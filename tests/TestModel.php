@@ -1,9 +1,10 @@
 <?php
 
-namespace Spatie\Translatable\Test;
+namespace Bakerkretzmar\Translatable\Tests;
+
+use Bakerkretzmar\Translatable\HasTranslations;
 
 use Illuminate\Database\Eloquent\Model;
-use Spatie\Translatable\HasTranslations;
 
 class TestModel extends Model
 {
@@ -12,7 +13,11 @@ class TestModel extends Model
     protected $table = 'test_models';
 
     protected $guarded = [];
+
     public $timestamps = false;
 
-    public $translatable = ['name', 'other_field'];
+    public $translatable = [
+        'name',
+        'description'
+    ];
 }

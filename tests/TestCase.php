@@ -1,9 +1,10 @@
 <?php
 
-namespace Spatie\Translatable\Test;
+namespace Bakerkretzmar\Translatable\Tests;
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
+
 use Orchestra\Testbench\TestCase as Orchestra;
 
 abstract class TestCase extends Orchestra
@@ -19,8 +20,8 @@ abstract class TestCase extends Orchestra
     {
         Schema::create('test_models', function (Blueprint $table) {
             $table->increments('id');
-            $table->text('name')->nullable();
-            $table->text('other_field')->nullable();
+            $table->json('name')->nullable();
+            $table->json('description')->nullable();
         });
     }
 }
