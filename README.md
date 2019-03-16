@@ -5,7 +5,7 @@ Another trait to make Eloquent models translatable
 [![Travis CI build status](https://img.shields.io/travis/bakerkretzmar/laravel-translatable/master.svg?style=flat-square)](https://travis-ci.org/bakerkretzmar/laravel-translatable)
 <!-- [![StyleCI](https://styleci.io/repos/55690447/shield?branch=master)](https://styleci.io/repos/55690447) -->
 
-This package is a fork of [`spatie/laravel-translatable`](https://github.com/spatie/laravel-translatable), which "provides a trait to make Eloquent models translatable." `laravel-translatable` allows a translated attribute, like `name`, to store many different translation values in a JSON column and conveniently always return the correct one for the current app locale. Almost too conveniently...
+This package is a fork of [`spatie/laravel-translatable`](https://github.com/spatie/laravel-translatable), which provides a trait to make Eloquent models translatable. That package allows a translated attribute, like `name`, to store many different translation values in a JSON column and conveniently always return the correct one for the current app locale. Almost too conveniently...
 
 Using Spatie's package the translated property always returns a string, so there's no way to retrieve the whole array out of the database using a _property_ on the model. Likewise, there's no way to access the property itself _as_ an array, so fun little tricks like Laravel's [`data_get()`](https://github.com/laravel/framework/blob/5.8/src/Illuminate/Support/helpers.php#L489) helper don't work anymore.
 
@@ -61,7 +61,7 @@ $model->getTranslation('name', 'fr');
 
 #### Validation
 
-**To be confirmed, haven't tested this yet.**. If you need to validate an attribute for uniqueness before saving or updating the DB, check out [laravel-unique-translation](https://github.com/codezero-be/laravel-unique-translation), which is made specifically for `laravel-translatable`.
+**To be confirmed, haven't tested this yet**. If you need to validate an attribute for uniqueness before saving or updating the DB, check out [laravel-unique-translation](https://github.com/codezero-be/laravel-unique-translation), which is made specifically for `laravel-translatable`.
 
 #### Everything else
 
